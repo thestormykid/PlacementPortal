@@ -1,0 +1,22 @@
+<% include header %>
+
+<div class = "container well" style= "position: relative; width: 84.5%">
+
+  <h1 style = "text-align: center"> Add new questions </h1>
+    <form action = "/problems" method = "post" class = "form-group" style = "margin: 20px">
+        <input class = "form-control" type = "text" name = "problem[name]" placeholder = "problem name">
+        <input class = "form-control" type = "text" name = "problem[difficulty]" placeholder = "difficulty">
+        <input class = "form-control" placeholder = "problem statement" name = "problem[questions]" style = "height:80px">
+        <label>give input test cases</label>
+        <input class = "form-control"   type = "text" name = "problem[a]" placeholder = "option A">
+        <input class = "form-control"   type = "text" name = "problem[b]" placeholder = "option B">
+        <input class = "form-control"   type = "text" name = "problem[c]" placeholder = "option c">
+        <input class = "form-control"   type = "text" name = "problem[d]" placeholder =  "option D">
+        <input class = "form-control"   type = "text" name = "problem[correctAns]" placeholder = "correctAns">
+        <input class = "form-control btn btn-primary"   type = "submit">
+    </form>
+    
+    
+</div>
+
+<% include footer %>

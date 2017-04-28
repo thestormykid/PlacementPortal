@@ -1,0 +1,40 @@
+.validate{
+    
+    height: 300px;
+    font-size: 50px;
+}
+input{
+    height: 100px;
+    font-size: 50px;
+}
+body{
+    color: blue;
+}
+#first_name{
+    height: 50px;
+    font-size: 25px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+#prob{
+    width: 500px;
+    height: 100px;
+    box-shadow: 2px 2px 2px 2px #888888;
+    
+}
+.form-control{
+    margin: 5px;
+}

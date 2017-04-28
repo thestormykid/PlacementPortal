@@ -1,0 +1,28 @@
+<% include header %>
+    
+    <h1 style = "color: pink; text-align: center" ><strong><%= statements.name %></strong></h1>
+    <br/>
+    
+    <div class = "well container" style= "width:800px; margin-left: 25%" >
+        <h3> <%= statements.questions %> </h3>
+        <div >
+            <p class = "pull-right"><%= statements.a %></p><input class = "pull-right" type = "radio" id = "a">
+            <input class = "pull-left"  type = "radio" id = "b"> <p><%= statements.b %> </p>
+            <br>
+            <p class = "pull-right"><%= statements.c %></p><input class = "pull-right "type = "radio" id = "c">
+            <input class = "pull-left"  type = "radio" id = "d"><p><%= statements.d %> </p>
+        </div>
+    </div>
+    
+    <script>
+       
+        $(this).onclick(function(){
+           var x = this.id;
+           
+           if (<%= statements.correctAnsw %> == x)
+        });
+        
+    </script>
+    
+    
+<% include footer %>

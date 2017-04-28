@@ -1,0 +1,20 @@
+<% include header %>
+
+<a href = "/problems/new"> add more </a>
+ 
+    <div class = "row container">
+<% data.forEach(function(val){ %>
+  <div class = "container col-xs-6" style = "margin: 20px" id = "prob">
+    
+        <p class = "pull-left form-group"><strong><%= val.name %></strong></p>
+        <br/>
+        <p class = "pull-left form-group" style = "margin-top: 5px; color: pink"><strong style= "color : grey" >Difficulty :  </strong><strong><%= val.difficulty %></strong></p>
+        <br/>
+        <button class = "pull-right btn btn-success"><a href = "/problems/<%= val._id %>" style = "color: white">Solve</a></button>
+    </div>
+  
+<% }) %>
+
+</div>
+
+<% include footer %>

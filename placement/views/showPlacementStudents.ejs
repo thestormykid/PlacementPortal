@@ -1,0 +1,28 @@
+<% include header %>
+
+<div class = "container well" style= "position: relative; width: 84.5%">
+  <h1 style = "text-align: center"> Apply for placement </h1>
+    <form action = "/placementRegis" method = "post" class = "form-group">
+        <input class=  "form-control" type = "text" name = "User[Name]" placeholder = "enter your name">
+        <input class = "form-control" type = "text" name = "User[Enrollment_no]" placeholder = "enter your Enrollment_no">
+        <input class = "form-control" type = "text" name = "User[Year]" placeholder = "enter your year">
+        <input type = "submit" class ="form-control btn btn-primary btn-md">
+    </form>
+</div>
+<div class = "container">
+<table>
+  <tr>
+    <th>Name </th>
+    <th>Enrollment_no</th>
+    <th>Year</th>
+  </tr>
+  <% student.forEach(function(data){ %>
+   <tr>
+    <td> <%= data.Name %></td>
+    <td> <%= data.Enrollment_no %></td>
+    <td> <%= data.Year %></td>
+  </tr>
+  <% }) %>
+</table>
+</div>
+<% include footer %>
